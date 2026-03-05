@@ -353,6 +353,10 @@ Rails.application.routes.draw do
           end
 
           resources :upload, only: [:create]
+
+          # CRM - Leads
+          resources :leads
+          resources :lead_stages
         end
       end
       # end of account scoped api routes
